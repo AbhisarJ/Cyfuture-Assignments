@@ -1,0 +1,20 @@
+pip install git+https://github.com/openai/whisper.git
+
+# on Ubuntu or Debian
+sudo apt update && sudo apt install ffmpeg
+
+# on Arch Linux
+sudo pacman -S ffmpeg
+
+# on MacOS using Homebrew (https://brew.sh/)
+brew install ffmpeg
+
+# on Windows using Chocolatey (https://chocolatey.org/)
+choco install ffmpeg
+
+# on Windows using Scoop (https://scoop.sh/)
+scoop install ffmpeg
+
+whisper japanese.wav --language Japanese --task translate
+
+whisper audio.flac audio.mp3 audio.wav --model turbo
